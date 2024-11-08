@@ -3,12 +3,17 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const dotenv = require('dotenv');
+const cors = require('cors');
+
 dotenv.config();
 
 // function
 const docusign = require('./function/docusign');
 
 const app = express();
+app.use(cors({
+    origin: '*',
+}));
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(session({
