@@ -34,12 +34,10 @@ function makeEnvelope(templateId, email, name, role, tabDataArray=[]) {
     let env = new docusign.EnvelopeDefinition();
     env.templateId = templateId;
 
-    // ตรวจสอบว่ามีการส่ง tabDataArray และเป็นอาร์เรย์หรือไม่
     if (!Array.isArray(tabDataArray)) {
         throw new Error("tabDataArray should be an array");
     }
 
-    // ลูปสร้าง Text Tabs จากอาร์เรย์ของออบเจ็กต์ tabDataArray
     let textTabs = tabDataArray.map(data => {
         return docusign.Text.constructFromObject({
             tabLabel: data.tabLabel,
@@ -47,7 +45,6 @@ function makeEnvelope(templateId, email, name, role, tabDataArray=[]) {
         });
     });
 
-    // รวม Text Tabs ที่สร้างจากลูปเข้าใน Tabs
     let tabs = docusign.Tabs.constructFromObject({
         textTabs: textTabs
     });
