@@ -1,0 +1,30 @@
+[
+    {
+        "templateId": "11933966-ee1a-483d-9778-7f02456ee402",
+        "email": "pranob.onphaeng@gmail.com",
+        "name": "pranob",
+        "role": "Signer",
+        "tabData": [
+            { "tabLabel": "S1Text", "value": "Thailand ไทย1" },
+            { "tabLabel": "S1Text2", "value": "Manager" }
+        ]
+    },
+    {
+        "templateId": "11933966-ee1a-483d-9778-7f02456ee402",
+        "email": "onphaeng012@gmail.com",
+        "name": "pranob2",
+        "role": "Signer2",
+        "tabData": [
+            { "tabLabel": "S2Text", "value": "Thailand ไทย2" }
+        ]
+    },
+    {
+        "templateId": "11933966-ee1a-483d-9778-7f02456ee402",
+        "email": "copers2002@gmail.com",
+        "name": "pranob3",
+        "role": "Witness",
+        "tabData": [
+            { "tabLabel": "company", "value": "Thailand ไทย" } 
+        ]
+    }
+]
